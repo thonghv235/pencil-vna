@@ -1,460 +1,371 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Nâng hạng cùng Vietnam Airlines – Săn deal ưu đãi 15%!</title>
-
-  <style>
-    div {
-      display: none;
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enews Vietnam Airlines</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ececec;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222222;
     }
-    @media only screen and (max-width: 620px) {
-      table.wrapper > tbody > tr > td {
-        padding: 0 !important;
-      }
-      table.container {
-        width: 100% !important;
-        max-width: 100% !important;
-        border-radius: 0 !important;
-      }
-      td.headline {
-        padding: 24px 20px 8px !important;
-      }
-      td.headline h1 {
-        font-size: 18px !important;
-        line-height: 1.4 !important;
-      }
-      td.subheadline {
-        padding: 6px 20px 20px !important;
-        font-size: 13px !important;
-      }
-      td.divider {
-        padding: 0 20px !important;
-      }
-      td.body-copy {
-        padding: 20px 20px 8px !important;
-      }
-      td.cta-cell {
-        padding: 20px 20px 24px !important;
-      }
-      a.cta-btn {
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    img {
+      border: 0;
+      display: block;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #ececec;
+      padding: 28px 0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .teal { background-color: #035f70; }
+
+    .topbar {
+      padding: 14px 20px;
+      text-align: center;
+    }
+
+    .section { padding: 30px 34px; }
+
+    .headline {
+      margin: 0;
+      font-size: 36px;
+      line-height: 1.2;
+      color: #151515;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .sub-headline {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: bold;
+      color: #111111;
+      text-align: center;
+    }
+
+    .paragraph {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #2f2f2f;
+      text-align: justify;
+    }
+
+    .gray-panel {
+      background-color: #e8e8ea;
+      padding: 24px 22px;
+      border-radius: 4px;
+    }
+
+    .card-title {
+      margin: 14px 0 8px;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #111111;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #208fab;
+      color: #d7edf2;
+      padding: 22px 22px 18px;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .footer strong { color: #ffffff; }
+
+    .store-label {
+      display: block;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .muted {
+      color: #7f9ea3;
+      font-size: 12px;
+      margin-top: 16px;
+    }
+
+    .muted a { color: #2a96bf; text-decoration: underline; }
+
+    @media only screen and (max-width: 680px) {
+      .wrapper { padding: 0; }
+      .container { border-radius: 0; }
+
+      .section { padding: 22px 16px; }
+      .headline { font-size: 28px; }
+      .paragraph { font-size: 14px; }
+
+      .stack,
+      .stack td {
         display: block !important;
-        width: auto !important;
-        text-align: center !important;
-        padding: 14px 20px !important;
-        box-sizing: border-box !important;
-      }
-      td.fare-classes {
-        padding: 0 20px 20px !important;
-      }
-      td.dates-cell {
-        padding: 16px 20px 20px !important;
-      }
-      table.dates-table td.date-col {
-        display: block !important;
-        width: 100% !important;
-        padding: 0 0 16px 0 !important;
-      }
-      td.promo-cell {
-        padding: 20px 16px 8px !important;
-      }
-      table.promo-table td.promo-col {
-        display: block !important;
-        width: 100% !important;
-        padding: 0 0 24px 0 !important;
-      }
-      table.promo-table td.promo-col img {
-        max-width: 100% !important;
         width: 100% !important;
       }
-      td.footer-cell {
-        padding: 20px 16px !important;
+
+      .stack td {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-bottom: 16px !important;
       }
-      table.footer-table td.footer-col {
-        display: block !important;
-        width: 100% !important;
-        padding: 0 0 16px 0 !important;
-        text-align: center !important;
-      }
-      table.footer-table td.footer-col img {
-        margin: 0 auto !important;
-      }
-      table.footer-table td.footer-col p {
-        text-align: center !important;
-      }
-      table.footer-table td.footer-col a {
-        text-align: center !important;
-        display: block !important;
-      }
-      td.app-col {
-        text-align: center !important;
-      }
-      td.app-col p,
-      td.app-col a {
-        text-align: center !important;
-      }
-      td.app-col a img {
-        display: inline-block !important;
-      }
-      td.awards-row {
-        text-align: center !important;
-      }
-      td.social-cell {
-        padding: 14px 16px !important;
-      }
-      table.social-table td.social-icons {
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
-        padding-bottom: 10px !important;
-      }
-      table.social-table td.copyright {
-        display: block !important;
-        width: 100% !important;
-        text-align: center !important;
-      }
-      table.social-table td.copyright p {
-        text-align: center !important;
-      }
+
+      .mobile-center { text-align: center !important; }
     }
   </style>
 </head>
 
-<body style="margin:0;padding:0;background-color:#f4f4f4;font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+<body>
+  <table role="presentation" class="wrapper" width="100%">
+    <tr>
+      <td align="center">
+        <table role="presentation" class="container" width="680">
 
-<!-- ===================== WRAPPER ===================== -->
-<table class="wrapper" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-  style="background-color:#f4f4f4;">
-  <tr>
-    <td align="center" style="padding:20px 10px;">
+          <!-- Header -->
+          <tr>
+            <td class="teal topbar" align="center">
+              <img src="image/logo.png" width="224" height="29" alt="Vietnam Airlines" style="display:block; margin:0 auto;" />
+            </td>
+          </tr>
 
-      <!-- ===================== CONTAINER ===================== -->
-      <table class="container" role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
-        style="max-width:600px;width:100%;background-color:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+          <!-- Hero banner -->
+          <tr>
+            <td style="padding:0; line-height:0;">
+              <img src="image/topbanner.jpg" width="680" height="341" alt="Nâng Hạng Trải Nghiệm" style="display:block; width:100%; max-width:680px;" />
+            </td>
+          </tr>
 
-        <!-- ===== HEADER: LOGO ===== -->
-        <tr>
-          <td align="center" style="background-color:#007ea3;padding:16px 24px;">
-            <img
-              src="image/logo.png"
-              alt="Vietnam Airlines"
-              width="160"
-              style="display:block;max-width:160px;height:auto;border:0;" />
-          </td>
-        </tr>
+          <!-- Section 1: Image + Headline -->
+          <tr>
+            <td class="section">
+              <table role="presentation" width="100%" class="stack">
+                <tr>
+                  <td width="200" valign="middle" style="padding-right: 22px;">
+                    <img src="image/h1.png" width="188" height="232" alt="Amsterdam" style="display:block; margin:0 auto;" />
+                  </td>
+                  <td valign="top">
+                    <h2 class="sub-headline">NÂNG HẠNG CHUYẾN BAY<br />VỚI ƯU ĐÃI ĐẶC BIỆT TỪ<br />AMSTERDAM ĐẾN VIỆT NAM</h2>
+                    <p class="paragraph">
+                      Nâng hạng vé để mỗi hành trình trở nên thư thái hơn. Tận hưởng không gian riêng tư, dịch vụ ưu tiên và những trải nghiệm được chăm chút từng khoảnh khắc — cho chuyến đi không chỉ là di chuyển, mà là tận hưởng.
+                    </p>
+                  </td>
+                </tr>
+              </table>
 
-        <!-- ===== HERO IMAGE ===== -->
-        <tr>
-          <td style="padding:0;line-height:0;font-size:0;">
-            <img
-              src="image/topbanner.jpg"
-              alt="Mỗi hành trình, một đẳng cấp"
-              width="600"
-              style="display:block;width:100%;max-width:600px;height:auto;border:0;" />
-          </td>
-        </tr>
+              <table role="presentation" width="100%" style="margin-top: 24px;">
+                <tr>
+                  <td>
+                    <p class="paragraph"><strong>Quý khách %%Name%% thân mến,</strong></p>
+                    <p class="paragraph" style="margin-top: 12px;">
+                      Mùa hè này, Việt Nam chào đón Quý khách với những cảnh sắc đa dạng và nền văn hóa giàu bản sắc. Mỗi chuyến đi là cơ hội để khám phá, tận hưởng và kết nối. Hãy khởi hành từ châu Âu qua Amsterdam và khám phá Việt Nam với mức giá khứ hồi đặc biệt chỉ áp dụng cho 3 ngày trong tháng 6/2026!
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-        <!-- ===== HEADLINE ===== -->
-        <tr>
-          <td class="headline" align="center" style="padding:32px 40px 8px;">
-            <h1 style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:22px;font-weight:700;color:#1a1a1a;line-height:1.35;text-align:center;">
-              Nâng hạng cùng Vietnam Airlines – Săn deal ưu đãi 15%!
-            </h1>
-          </td>
-        </tr>
+          <!-- Section 2: Headline -->
+          <tr>
+            <td class="section" style="padding-top: 0; padding-bottom: 16px;">
+              <h2 class="headline">MỨC ƯU ĐÃI HẤP DẪN TỪ AMSTERDAM</h2>
+            </td>
+          </tr>
 
-        <!-- ===== SUBHEADLINE ===== -->
-        <tr>
-          <td class="subheadline" align="center" style="padding:10px 40px 28px;">
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#555555;text-align:center;line-height:1.7;">
-              Đôi khi, chỉ cần nâng hạng một chuyến bay, là đủ để nâng tầm cả hành trình.<br />
-              Từ sự thoải mái, riêng tư đến cảm giác được phục vụ chu đáo trên từng trải nghiệm<br />
-              — mọi thứ đều được thiết kế để bạn tận hưởng bầu trời theo cách trọn vẹn hơn.
-            </p>
-          </td>
-        </tr>
+          <!-- Section 3: Two-column cards -->
+          <tr>
+            <td class="section" style="padding-top: 0;">
+              <div class="gray-panel">
+                <table role="presentation" width="100%" class="stack">
+                  <tr>
+                    <td width="50%" valign="top" style="padding-right: 10px;">
+                      <img src="image/h2.png" width="271" height="172" alt="Hà Nội" style="display:block; width:100%; max-width:271px;" />
+                      <h3 class="card-title">Amsterdam – Hà Nội</h3>
+                      <p class="paragraph mobile-center" style="font-size: 15px; text-align: center;">
+                        Chỉ từ 663 EUR/khứ hồi<br />
+                        Mua vé: Từ nay đến 30/06<br />
+                        Khởi hành: Chỉ trong 03 ngày 16/06,<br />23/06, 30/06
+                      </p>
+                      <table role="presentation" width="100%" style="margin-top: 14px;">
+                        <tr>
+                          <td align="center">
+                            <a href="#">
+                              <img src="image/btn1.png" width="214" height="26" alt="Mua ngay" style="display:block; margin:0 auto;" />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td width="50%" valign="top" style="padding-left: 10px;">
+                      <img src="image/h3.png" width="271" height="173" alt="TP. Hồ Chí Minh" style="display:block; width:100%; max-width:271px;" />
+                      <h3 class="card-title">Amsterdam – TP. Hồ Chí Minh</h3>
+                      <p class="paragraph mobile-center" style="font-size: 15px; text-align: center;">
+                        Chỉ từ 663 EUR/khứ hồi<br />
+                        Mua vé: Từ nay đến 30/06<br />
+                        Khởi hành: Chỉ trong 03 ngày 16/06,<br />23/06, 30/06
+                      </p>
+                      <table role="presentation" width="100%" style="margin-top: 14px;">
+                        <tr>
+                          <td align="center">
+                            <a href="#">
+                              <img src="image/btn1.png" width="214" height="26" alt="Mua ngay" style="display:block; margin:0 auto;" />
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
 
-        <!-- ===== DIVIDER ===== -->
-        <tr>
-          <td class="divider" style="padding:0 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="border-top:1px solid #e8e8e8;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
-          </td>
-        </tr>
+          <!-- Section 4: Main CTA -->
+          <tr>
+            <td class="section" align="center" style="padding-top: 10px; padding-bottom: 10px;">
+              <a href="#">
+                <img src="image/btn.png" width="313" height="49" alt="XEM TOÀN BỘ ƯU ĐÃI" style="display:block; margin:0 auto;" />
+              </a>
+            </td>
+          </tr>
 
-        <!-- ===== GREETING & BODY COPY ===== -->
-        <tr>
-          <td class="body-copy" style="padding:28px 40px 8px;">
-            <p style="margin:0 0 12px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;color:#1a1a1a;">
-              Quý khách <span style="color:#007ea3;">%%Name%%</span> thân mến,
-            </p>
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;color:#444444;line-height:1.75;">
-              Cơ hội du lịch và di chuyển trong tháng 1 chưa bao giờ hấp dẫn đến thế!
-              Pacific Airlines dành tặng ưu đãi giảm trực tiếp
-              <strong style="color:#1a1a1a;">15% giá vé</strong>
-              cho các hành trình nội địa, giúp Quý khách dễ dàng kết nối và khám phá mọi
-              miền đất nước chỉ từ <strong style="color:#1a1a1a;">643.000 VND</strong>.
-            </p>
-          </td>
-        </tr>
+          <!-- Section 5: Two-row service list -->
+          <tr>
+            <td class="section" style="padding-top: 8px;">
+              <div class="gray-panel" style="padding-bottom: 18px;">
 
-        <!-- ===== CTA BUTTON ===== -->
-        <tr>
-          <td class="cta-cell" align="center" style="padding:28px 40px 32px;">
-            <a href="https://www.vietnamairlines.com" target="_blank" style="display:inline-block;border:0;">
-              <img src="image/btn.png" alt="CHI TIẾT ƯU ĐÃI"
-                width="240"
-                style="display:block;width:240px;height:auto;border:0;" />
-            </a>
-          </td>
-        </tr>
+                <table role="presentation" width="100%" class="stack" style="margin-bottom: 20px;">
+                  <tr>
+                    <td width="220" valign="top" style="padding-right: 16px;">
+                      <img src="image/h4.png" width="210" height="114" alt="Sky Sofa" style="display:block; width:100%; max-width:210px;" />
+                    </td>
+                    <td valign="top">
+                      <h3 style="margin:0 0 6px; font-size: 16px; font-weight: bold; color: #111111;">Sky Sofa – Dịch vụ ngày một nâng cao</h3>
+                      <p class="paragraph" style="font-size: 15px;">
+                        Tận hưởng chuyến bay êm ái khi thêm 02 ghế trống bên cạnh, cùng với các vật phẩm theo tiêu chuẩn hạng Phổ thông đặc biệt.
+                      </p>
+                      <p style="margin: 8px 0 0; font-size: 14px; font-style: italic; color: #2f2f2f;">
+                        <a href="#" style="color: #2f2f2f; text-decoration: none; font-style: italic;">Tìm hiểu ngay &gt;&gt;</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
 
-        <!-- ===== FARE CLASSES ===== -->
-        <tr>
-          <td class="fare-classes" style="padding:0 40px 28px;">
-            <p style="margin:0 0 6px;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#444444;line-height:1.7;">
-              <strong style="color:#1a1a1a;">Hạng vé áp dụng:</strong>
-            </p>
-            <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#444444;line-height:1.9;">
-              Hạng Thương gia tiêu chuẩn (D/I)<br />
-              Hạng&nbsp; Phổ thông đặc biệt tiêu chuẩn (U)<br />
-              Hạng Phổ thông tiêu chuẩn (S/H/K/L)<br />
-              Hạng Phổ thông tiết kiệm (Q/N/R/T/E)<br />
-              Hạng phổ thông siêu tiết kiệm (P/A)<br />
-              <em style="color:#777777;">(giá vé đã bao gồm thuế, phí)</em>
-            </p>
-          </td>
-        </tr>
+                <table role="presentation" width="100%" class="stack">
+                  <tr>
+                    <td width="220" valign="top" style="padding-right: 16px;">
+                      <img src="image/h5.png" width="210" height="115" alt="Hạng Thương Gia" style="display:block; width:100%; max-width:210px;" />
+                    </td>
+                    <td valign="top">
+                      <h3 style="margin:0 0 6px; font-size: 16px; font-weight: bold; color: #111111;">Hạng Thương Gia – Nâng tầm từng khoảnh khắc hành trình</h3>
+                      <p class="paragraph" style="font-size: 15px;">
+                        Tận hưởng trải nghiệm bay đẳng cấp với công nghệ hiện đại, tiện nghi tỉ tế và dịch vụ chu đáo, mang đến một hành trình trọn vẹn và đầy cảm hứng cùng Vietnam Airlines.
+                      </p>
+                      <p style="margin: 8px 0 0; font-size: 14px; font-style: italic; color: #2f2f2f;">
+                        <a href="#" style="color: #2f2f2f; text-decoration: none; font-style: italic;">Tìm hiểu ngay &gt;&gt;</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
 
-        <!-- ===== DIVIDER ===== -->
-        <tr>
-          <td class="divider" style="padding:0 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="border-top:1px solid #e8e8e8;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
-          </td>
-        </tr>
+              </div>
+            </td>
+          </tr>
 
-        <!-- ===== MUA VÉ / KHỞI HÀNH DATES ===== -->
-        <tr>
-          <td class="dates-cell" style="padding:24px 40px 32px;">
-            <table class="dates-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
+          <!-- Footer -->
+          <tr>
+            <td class="footer">
 
-                <!-- Mua vé -->
-                <td class="date-col" width="50%" valign="top" style="padding-right:12px;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td valign="top" style="padding-right:10px;">
-                        <img src="image/icon1.png" alt="" width="24" height="24"
-                          style="display:block;border:0;" />
-                      </td>
-                      <td valign="top">
-                        <p style="margin:0 0 2px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;color:#1a1a1a;">
-                          Mua vé
-                        </p>
-                        <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#555555;">
-                          Từ nay đến 20/05/2026
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-
-                <!-- Khởi hành -->
-                <td class="date-col" width="50%" valign="top" style="padding-left:12px;">
-                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                      <td valign="top" style="padding-right:10px;">
-                        <img src="image/icon2.png" alt="" width="24" height="24"
-                          style="display:block;border:0;" />
-                      </td>
-                      <td valign="top">
-                        <p style="margin:0 0 2px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;color:#1a1a1a;">
-                          Khởi hành
-                        </p>
-                        <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#555555;">
-                          Từ nay đến 20/05/2026
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <!-- ===== DIVIDER ===== -->
-        <tr>
-          <td class="divider" style="padding:0 40px;">
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr><td style="border-top:1px solid #e8e8e8;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
-          </td>
-        </tr>
-
-        <!-- ===== PROMO CARDS (2 columns) ===== -->
-        <tr>
-          <td class="promo-cell" style="padding:28px 24px 8px;">
-            <table class="promo-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-
-                <!-- Card 1: Techcombank -->
-                <td class="promo-col" width="50%" valign="top" style="padding:0 8px;">
-                  <img src="image/h1.png" alt="Ưu đãi Techcombank"
-                    width="260"
-                    style="display:block;width:100%;max-width:260px;height:auto;border-radius:6px;border:0;" />
-                  <p style="margin:12px 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;color:#1a1a1a;line-height:1.4;">
-                    Nhận ưu đãi hoàn tiền cực hời cùng Techcombank
-                  </p>
-                  <p style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#555555;line-height:1.7;">
-                    Mua vé máy bay cùng Vietnam Airlines và nhận ưu đãi hoàn tiền lên đến
-                    2 triệu điểm thưởng trên Techcombank Rewards.
-                  </p>
-                  <a href="https://www.vietnamairlines.com" target="_blank"
-                    style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#007ea3;text-decoration:none;font-weight:700;">
-                    Xem thêm &gt;&gt;
-                  </a>
-                </td>
-
-                <!-- Card 2: Lucky Monday -->
-                <td class="promo-col" width="50%" valign="top" style="padding:0 8px;">
-                  <img src="image/h2.png" alt="Lucky Monday"
-                    width="260"
-                    style="display:block;width:100%;max-width:260px;height:auto;border-radius:6px;border:0;" />
-                  <p style="margin:12px 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:700;color:#1a1a1a;line-height:1.4;">
-                    Lucky Monday – Bay nhẹ nhàng, tiết kiệm hơn
-                  </p>
-                  <p style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#555555;line-height:1.7;">
-                    Ưu đãi thứ Hai hàng tuần, giảm ngay 10% phí hành lý trả trước khi
-                    Quý khách đặt vé trực tuyến.
-                  </p>
-                  <a href="https://www.vietnamairlines.com" target="_blank"
-                    style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#007ea3;text-decoration:none;font-weight:700;">
-                    Xem thêm &gt;&gt;
-                  </a>
-                </td>
-
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-        <!-- spacer -->
-        <tr><td style="height:24px;line-height:24px;font-size:24px;">&nbsp;</td></tr>
-
-        <!-- ===== FOOTER (teal) ===== -->
-        <tr>
-          <td class="footer-cell" style="background-color:#208fab;padding:28px 32px;">
-            <table class="footer-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-
-                <!-- Awards logos -->
-                <td class="footer-col" width="80" valign="middle" style="padding-right:16px;">
-                  <img src="image/partner.png" alt="Giải thưởng Vietnam Airlines"
-                    width="60" style="display:block;border:0;" />
-                </td>
-
-                <!-- Contact info -->
-                <td class="footer-col" valign="middle" style="padding:0 8px;">
-                  <p style="margin:0 0 4px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#ffffff;line-height:1.8;">
-                    Đặt vé ngay tại:
-                    <a href="https://www.vietnamairlines.com" target="_blank"
-                      style="color:#ffffff;font-weight:700;text-decoration:underline;">
-                      www.vietnamairlines.com
-                    </a>
-                  </p>
-                  <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#ffffff;line-height:1.8;">
+              <!-- Row 1: Contact info + App download -->
+              <table role="presentation" width="100%" class="stack">
+                <tr>
+                  <td valign="top" style="padding-right: 16px;">
+                    Đặt vé ngay tại: <strong>www.vietnamairlines.com</strong><br />
                     Tổng đài hỗ trợ trong nước (24/7): <strong>1900 1100</strong><br />
-                    Tổng đài hỗ trợ nước ngoài (24/7): <strong>+84 24 38320320</strong><br />
+                    Tổng đài hỗ trợ từ nước ngoài (24/7): <strong>+84 24 38320320</strong><br />
                     Tổng đài cho hội viên Lotusmiles: <strong>1900 1800</strong>
-                  </p>
-                </td>
+                  </td>
+                  <td width="120" valign="top" align="right" class="mobile-center">
+                    <span class="store-label" style="display:flex; align-items:center; gap:4px; justify-content:flex-end; margin-bottom:7px;">
+                      <img src="image/icon_dl.png" width="15" height="15" alt="" style="display:inline-block; vertical-align:middle;" />
+                      &nbsp;TẢI APP NGAY
+                    </span>
+                    <a href="#" style="display:block; margin-bottom:6px;">
+                      <img src="image/icon_ios.png" width="89" height="26" alt="App Store" style="display:block; margin-left:auto;" />
+                    </a>
+                    <a href="#" style="display:block;">
+                      <img src="image/icon_android.png" width="88" height="26" alt="Google Play" style="display:block; margin-left:auto;" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
 
-                <!-- App download -->
-                <td class="footer-col app-col" width="130" valign="middle" align="right" style="text-align:right;">
-                  <p style="margin:0 0 6px;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#ffffff;font-weight:700;">
-                    <img src="image/icon_dl.png" alt="Download" style="display:inline-block;border:0;vertical-align:middle;width:auto;" /> TẢI APP NGAY
-                  </p>
-                  <a href="https://apps.apple.com" target="_blank"
-                    style="display:block;margin-bottom:6px;">
-                    <img src="image/icon_ios.png" alt="Tải trên App Store"
-                      height="30" style="display:inline-block;border:0;height:30px;width:auto;" />
-                  </a>
-                  <a href="https://play.google.com" target="_blank"
-                    style="display:block;">
-                    <img src="image/icon_android.png" alt="Tải trên Google Play"
-                      height="30" style="display:inline-block;border:0;height:30px;width:auto;" />
-                  </a>
-                </td>
+              <!-- Row 2: Awards + Social icons -->
+              <table role="presentation" width="100%" style="margin-top: 18px;">
+                <tr>
+                  <td valign="middle">
+                    <img src="image/img-logo-partner-2.png" width="53" height="60" alt="2018 Aviation Awards" style="display:inline-block; vertical-align:middle; margin-right:4px;" />
+                    <img src="image/img-logo-partner-3.png" width="56" height="57" alt="TripAdvisor" style="display:inline-block; vertical-align:middle; margin-right:4px;" />
+                    <img src="image/img-logo-partner-4.png" width="57" height="58" alt="4 Star Airline Skytrax" style="display:inline-block; vertical-align:middle; margin-right:4px;" />
+                    <img src="image/img-logo-partner-1.png" width="123" height="48" alt="World Travel Awards" style="display:inline-block; vertical-align:middle;" />
+                  </td>
+                  <td align="right" valign="middle">
+                    <table role="presentation" align="right">
+                      <tr>
+                        <td align="right">
+                          <a href="#" style="display:inline-block; margin-left:5px;"><img src="image/instagram.png" width="32" height="33" alt="Instagram" style="display:inline-block;" /></a><a href="#" style="display:inline-block; margin-left:5px;"><img src="image/fb.png" width="33" height="33" alt="Facebook" style="display:inline-block;" /></a><a href="#" style="display:inline-block; margin-left:5px;"><img src="image/tiktok.png" width="33" height="33" alt="TikTok" style="display:inline-block;" /></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="right" style="padding-top: 5px;">
+                          <a href="#" style="display:inline-block; margin-left:5px;"><img src="image/twx.png" width="32" height="33" alt="X" style="display:inline-block;" /></a><a href="#" style="display:inline-block; margin-left:5px;"><img src="image/ytb.png" width="33" height="33" alt="YouTube" style="display:inline-block;" /></a><a href="#" style="display:inline-block; margin-left:5px;"><img src="image/zalo.png" width="33" height="33" alt="Zalo" style="display:inline-block;" /></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
 
-              </tr>
+              <!-- Copyright -->
+              <p class="muted" style="color: #000000;">&#169; 2026 Vietnam Airlines JSC &nbsp;|&nbsp; <a href="#" style="color: #000000;">Hủy đăng ký</a></p>
 
-              <!-- World Travel Awards -->
-              <tr>
-                <td class="awards-row" colspan="3" align="right" style="padding-top:16px;">
-                  <img src="image/img-logo-partner-1.png" alt="World Travel Awards"
-                    width="123" style="display:inline-block;border:0;" />
-                </td>
-              </tr>
+            </td>
+          </tr>
 
-            </table>
-          </td>
-        </tr>
-
-        <!-- ===== SOCIAL + COPYRIGHT ===== -->
-        <tr>
-          <td class="social-cell" style="background-color:#208fab;padding:16px 32px;">
-            <table class="social-table" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-              <tr>
-
-                <!-- Social icons -->
-                <td class="social-icons" valign="middle">
-                  <a href="#" target="_blank" style="display:inline-block;margin-right:8px;">
-                    <img src="image/twx.png" alt="X" width="24" height="24" style="display:block;border:0;" />
-                  </a>
-                  <a href="#" target="_blank" style="display:inline-block;margin-right:8px;">
-                    <img src="image/ytb.png" alt="YouTube" width="24" height="24" style="display:block;border:0;" />
-                  </a>
-                  <a href="#" target="_blank" style="display:inline-block;margin-right:8px;">
-                    <img src="image/zalo.png" alt="Zalo" width="24" height="24" style="display:block;border:0;" />
-                  </a>
-                  <a href="#" target="_blank" style="display:inline-block;margin-right:8px;">
-                    <img src="image/instagram.png" alt="Instagram" width="24" height="24" style="display:block;border:0;" />
-                  </a>
-                  <a href="#" target="_blank" style="display:inline-block;margin-right:8px;">
-                    <img src="image/fb.png" alt="Facebook" width="24" height="24" style="display:block;border:0;" />
-                  </a>
-                  <a href="#" target="_blank" style="display:inline-block;">
-                    <img src="image/tiktok.png" alt="TikTok" width="24" height="24" style="display:block;border:0;" />
-                  </a>
-                </td>
-
-                <!-- Copyright + Unsubscribe -->
-                <td class="copyright" valign="middle" align="right">
-                  <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#000;">
-                    © 2026 Vietnam Airlines JSC &nbsp;|&nbsp;
-                    <a href="#" style="color:#000;text-decoration:underline;">Huỷ đăng ký</a>
-                  </p>
-                </td>
-
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-      </table>
-      <!-- /CONTAINER -->
-
-    </td>
-  </tr>
-</table>
-<!-- /WRAPPER -->
-
+        </table>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
